@@ -1,0 +1,17 @@
+
+CREATE TABLE `yemekismi` (
+  `id` int(11) NOT NULL,
+  `yemek_adi` varchar(56) NOT NULL,
+  `malzeme_listesi` text NOT NULL,
+  `tarif` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=u8mb4;
+
+INSERT INTO `yemekler` (`yemekismi`, `malzemeismi`) VALUES
+('cağ kebabı','malzemeismi: soğan,yoğurt,yeşil biber,karabiber, kuzu budu,'),
+
+ALTER TABLE `yemekler`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `yemekler`
+  MODIFY `id` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+COMMIT;
